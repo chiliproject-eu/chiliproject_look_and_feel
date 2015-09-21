@@ -80,10 +80,11 @@ Redmine::Plugin.register :chiliproject_look_and_feel do
     :parent => :issues
   })
 
-  menu(:project_menu, :new_import, { :controller => 'imports', :action => 'new' }, {
-    :caption => :label_import_issues,
-    :parent => :issues
-  })
+  # TODO available only in master https://github.com/redmine/redmine/commit/035edd39c422c9434147a1b0ac457cb9383c9b5b
+  # menu(:project_menu, :new_import, { :controller => 'imports', :action => 'new' }, {
+  #   :caption => :label_import_issues,
+  #   :parent => :issues
+  # })
 
   menu(:project_menu, :new_news, {:controller => 'news', :action => 'new' }, {
     :param => :project_id,
