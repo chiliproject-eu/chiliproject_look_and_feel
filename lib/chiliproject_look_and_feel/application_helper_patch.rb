@@ -21,7 +21,7 @@ module ApplicationHelperPatch
       end
 
       def favicon_path
-        icon = (current_theme && current_theme.favicon?) ? current_theme.favicon_path : '/plugin_assets/chiliproject/favicon.ico'
+        icon = (current_theme && current_theme.favicon?) ? current_theme.favicon_path : '/plugin_assets/chiliproject_look_and_feel/favicon.ico'
         image_path(icon)
       end
 
