@@ -159,6 +159,8 @@ Redmine::Plugin.register :chiliproject_look_and_feel do
 end
 
 ActionDispatch::Callbacks.to_prepare do
-  require_dependency 'chiliproject_look_and_feel_hook_listener'
+  unless Redmine::Hook.listeners.any? { |l| l.class.name == 'ChiliprojectLookAndFeelHookListener' }
+    require_dependency 'chiliproject_look_and_feel_hook_listener'
+  end
   require_dependency 'chiliproject_look_and_feel/application_helper_patch'
 end
