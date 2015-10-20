@@ -6,4 +6,8 @@ class ChiliprojectLookAndFeelHookListener < Redmine::Hook::ViewListener
     javascript_include_tag('application', media: 'all', plugin: 'chiliproject_look_and_feel')
   end
 
+  def view_layouts_base_body_bottom(context = {})
+    stylesheet_link_tag('context_menu', media: 'all', plugin: 'chiliproject_look_and_feel')
+  end
+
 end

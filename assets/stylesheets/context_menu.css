@@ -1,0 +1,10 @@
+#context-menu li:hover {
+  border: 1px solid #6a0406 !important;
+  background-color: #FDEEEE !important;
+}
+#context-menu a:hover {
+  color: #6a0406 !important;
+}
+.context-menu-selection {
+  background-color: #6a0406 !important;
+}
