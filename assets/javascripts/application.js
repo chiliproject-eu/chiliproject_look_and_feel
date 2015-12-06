@@ -161,7 +161,7 @@ $(function(){
     var new_html = subject_html + ' (' + orig_html + ')';
     $('.controller-issues h2').html(new_html);
     $('.issue .subject h3').hide();
-    var $img = $('.issue .contextual + img').first();
+    var $img = $('.issue img[width=50]:first').first();
     if($img.length == 1) {
       $('.issue .author').prepend($img);
     }
