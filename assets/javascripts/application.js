@@ -161,6 +161,10 @@ $(function(){
     var new_html = subject_html + ' (' + orig_html + ')';
     $('.controller-issues h2').html(new_html);
     $('.issue .subject h3').hide();
+    var $img = $('.issue .next-prev-links + img').first();
+    if($img.length == 1) {
+      $('.issue .author').prepend($img);
+    }
   }
 
 });

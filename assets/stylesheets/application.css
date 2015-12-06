@@ -62,6 +62,10 @@ div.issue {background:none; border: none;}
 .splitcontent {
   overflow: hidden;
 }
+div.progress .closed,
+div.progress .done {
+  float: none !important;
+}
 /* / override default theme */
 
 #sidebar ul {
