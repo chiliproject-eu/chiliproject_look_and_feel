@@ -56,6 +56,12 @@ div.issue {background:none; border: none;}
 #logo {
   width: 210px !important;
 }
+.progress.attribute .value {
+  white-space: nowrap;
+}
+.splitcontent {
+  overflow: hidden;
+}
 /* / override default theme */
 
 #sidebar ul {

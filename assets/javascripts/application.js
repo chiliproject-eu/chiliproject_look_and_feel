@@ -148,6 +148,7 @@ $(function(){
   // minor UI tweaks so we don't have to override many views
   $('#filters').addClass('header_collapsible');
   $('#filters').siblings('fieldset').addClass('header_collapsible').attr('id', 'column_options');
+  $('#filters div:first').css('overflow', 'hidden');
   $('#query_form_with_buttons').addClass('title-bar-extras');
   // FIXME positioning issues if placed in content
   $('body').append($('#context-menu'));
