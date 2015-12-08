@@ -44,7 +44,7 @@
           project_tree(User.current.projects.all) do |project, level|
             name_prefix = (level > 0 ? ('&nbsp;' * 2 * level + '&#187; ') : '')
             project_content << content_tag(:li,
-                                   link_to(name_prefix + h(project), {:controller => 'projects', :action => 'show', :id => project, :jump => current_menu_item}))
+                                   link_to(name_prefix.html_safe + h(project), {:controller => 'projects', :action => 'show', :id => project, :jump => current_menu_item}))
           end
           %>
           <%= project_content.html_safe %>
