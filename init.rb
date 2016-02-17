@@ -2,7 +2,7 @@ Redmine::Plugin.register :chiliproject_look_and_feel do
   name 'ChiliProject Look & Feel'
   author 'ChiliProject.eu'
   description 'ChiliProject Look & Feel adds the original ChiliProject theme and menu style'
-  version '0.0.1'
+  version '0.0.4'
   url 'http://www.chiliproject.eu/projects/chiliproject/wiki/ChiliProject_Look_and_Feel_Plugin'
   author_url 'http://www.chiliproject.eu'
 
