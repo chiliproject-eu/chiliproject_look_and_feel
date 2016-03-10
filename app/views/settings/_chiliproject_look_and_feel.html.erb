@@ -1,0 +1,11 @@
+<p>
+  <%
+    color_scheme_options = [
+      [ "ChiliProject (default)", nil ],
+      [ "Kiwi Green", 'kiwi_green' ]
+    ]
+    selected_color_scheme = Setting.plugin_chiliproject_look_and_feel['color_scheme']
+  %>
+  <label for="settings_color_scheme">Color Scheme</label>
+  <%= select_tag 'settings[color_scheme]', options_for_select(color_scheme_options, selected_color_scheme) %>
+</p>
