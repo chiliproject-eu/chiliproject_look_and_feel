@@ -10,6 +10,9 @@
     margin-right: 0px;
 }
 #admin-menu a { background-image: none !important; }
+#main-menu li {
+  display: block;
+}
 #main-menu li a {
   color: rgb(51, 51, 51);
 }
@@ -4234,7 +4237,7 @@ div.issue div,
 #history .journal {
   clear: left;
   min-height: 50px;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
 }
 
 /* issue updates */
