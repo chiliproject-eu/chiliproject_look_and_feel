@@ -10,9 +10,6 @@
     margin-right: 0px;
 }
 #admin-menu a { background-image: none !important; }
-#main-menu li {
-  display: block;
-}
 #main-menu li a {
   color: rgb(51, 51, 51);
 }
@@ -4493,3 +4490,40 @@ div.progress .done {
 div.progress .done {
   background: #DEF0DE;
 }
+/* updates for v3.3.0 */
+#main-menu li {
+  display: block;
+}
+#main-menu li a.new-object {
+  background: #7F7F7F;
+}
+#main-menu li a#new-object {
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #7F7F7F;
+  color: #FFFFFF;
+}
+#main-menu .menu-children {
+  position: relative;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+/*#main-menu .menu-children li {float:left; clear:both; width:100%;}
+#main-menu .menu-children li a {color: #555; background-color:#fff; font-weight:normal;}
+#main-menu .menu-children li a:hover {color: #fff; background-color: #759FCF;}*/
+#main-menu li:hover ul.menu-children, #main-menu li ul.menu-children.visible {display: none;}
+#main-menu .menu-children li a:hover {
+  background-color: #7F7F7F;
+}
+/* end of updates for v3.3.0 */
